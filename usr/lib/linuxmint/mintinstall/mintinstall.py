@@ -26,6 +26,7 @@ gi.require_version('XApp', '1.0')
 from gi.repository import Gtk, Gdk, GdkPixbuf, GObject, GLib, Gio, XApp, Pango
 import cairo
 
+import xapp.os
 from mintcommon.installer import installer
 from mintcommon.installer import dialogs
 import prefs
@@ -3323,8 +3324,12 @@ class DottedProgressLabel(Gtk.Fixed):
         self.move(self.label, x_offset, 0)
 
 if __name__ == "__main__":
-    os.system("mkdir -p %s" % imaging.SCREENSHOT_DIR)
+    try:
+        xapp.os.add_network_proxy_to_env()
+    except Exception as e:
+        print("Network proxy support unavailable: %s", str(e))
 
+    os.system("mkdir -p %s" % imaging.SCREENSHOT_DIR)
     if os.environ.get("RAYON_NUM_THREADS") is None:
         os.environ["RAYON_NUM_THREADS"] = "2"
 
