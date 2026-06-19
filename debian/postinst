@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for mintinstall
+# postinst script for mythicstore
 #
 # see: dh_installdeb(1)
 
@@ -43,7 +43,7 @@ case "$1" in
         mkdir -p /var/lib/flatpak/exports/share/icons
     fi
 
-    python3 -m compileall /usr/lib/linuxmint/mintinstall
+    python3 -m compileall /usr/lib/mythicos/mythicstore
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
@@ -56,7 +56,7 @@ case "$1" in
     ;;
 esac
 
-# This script moved to mintupdate
+# This script is moved
 rm -f /etc/xdg/autostart/mintinstall-update-flatpak.desktop || true
 
 # dh_installdeb will replace this with shell code automatically
