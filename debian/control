@@ -1,11 +1,11 @@
-Source: mintinstall
+Source: mythicstore
 Section: admin
 Priority: optional
-Maintainer: Linux Mint <root@linuxmint.com>
+Maintainer: Studio Hastag <contact@hastag.fr>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 
-Package: mintinstall
+Package: mythicstore
 Architecture: all
 Pre-Depends: ca-certificates (>= 20210101)
 Depends: python3 (>= 3.4),
@@ -20,6 +20,7 @@ Depends: python3 (>= 3.4),
          gir1.2-xapp-1.0,
          libgtk3-perl,
          mint-common (>= 2.2.4),
+# Voir si forker mint-common est nécessaire
          app-install-data
 Recommends: gir1.2-flatpak-1.0, flatpak, xdg-desktop-portal-gtk
 Description: Software Manager
