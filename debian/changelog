@@ -1,3 +1,9 @@
+mythicstore (8.4.0~mythicstore1) lucid; urgency=medium
+
+  * Fork mintinstall for MythicOS
+
+ -- Studio Hastag <contact@hastag.fr>  Fri, 19 Jun 2026 18:15:00 +0200
+
 mintinstall (8.4.0) zena; urgency=medium
 
   [ Clement Lefebvre ]
