@@ -6,9 +6,9 @@ DEB_VERSION := $(shell dpkg-parsechangelog | egrep '^Version:' | cut -f 2 -d ' '
 	dh ${@}
 
 override_dh_auto_install:
-	mkdir -p debian/mintinstall/usr/share/linuxmint/mintinstall
+	mkdir -p debian/mythicstore/usr/share/mythicos/mythicstore
 	cd resources &&	glib-compile-resources \
-		--target=../debian/mintinstall/usr/share/linuxmint/mintinstall/mintinstall.gresource mintinstall.gresource.xml \
+		--target=../debian/mythicstore/usr/share/mythicos/mythicstore/mythicstore.gresource mythicstore.gresource.xml \
 		&& cd ..
 	dh_auto_install
 
