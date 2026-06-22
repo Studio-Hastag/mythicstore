@@ -2,7 +2,7 @@
 
 import os
 import apt
-os.chdir("usr/share/linuxmint/mintinstall/categories")
+os.chdir("usr/share/mythicos/mythicstore/categories")
 
 
 c = apt.Cache()
