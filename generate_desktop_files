@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 
-DOMAIN = "mintinstall"
-PATH = "/usr/share/linuxmint/locale"
+DOMAIN = "mythicstore"
+PATH = "/usr/share/mythicos/locale"
 KEYWORDS = "program,software,store,repository,package,add,install,uninstall,remove,apps,applications,games,flatpak"
 
 import os
 import gettext
-import mintcommon.additionalfiles as additionalfiles
+import mythiccommon.additionalfiles as additionalfiles
 
 os.environ['LANGUAGE'] = "en_US.UTF-8"
 gettext.install(DOMAIN, PATH)
 
 prefix = "[Desktop Entry]\n"
 
-suffix = """Exec=mintinstall
-Icon=mintinstall
+suffix = """Exec=mythicstore
+Icon=mythicstore
 Terminal=false
 Type=Application
 Encoding=UTF-8
@@ -23,9 +23,9 @@ NotShowIn=KDE;
 StartupNotify=true
 """
 
-additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintinstall.desktop", prefix, _("Software Manager"), _("Install new applications"), suffix, keywords=KEYWORDS)
+additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mythicstore.desktop", prefix, _("Software Manager"), _("Install new applications"), suffix, keywords=KEYWORDS)
 
-suffix = """Exec=mintinstall
+suffix = """Exec=mythicstore
 Icon=software-properties-mint
 Terminal=false
 Type=Application
@@ -34,4 +34,4 @@ Categories=System;
 OnlyShowIn=KDE;
 """
 
-additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintinstall-kde.desktop", prefix, _("Software Manager"), _("Install new applications"), suffix, genericName=_("Install new applications"), keywords=KEYWORDS)
+additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mythicstore-kde.desktop", prefix, _("Software Manager"), _("Install new applications"), suffix, genericName=_("Install new applications"), keywords=KEYWORDS)
