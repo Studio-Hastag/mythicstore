@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="com.linuxmint.install" path="/com/linuxmint/install/">
+  <schema id="com.mythicos.install" path="/com/mythicos/install/">
     <key type="b" name="search-in-summary">
       <default>true</default>
       <summary></summary>

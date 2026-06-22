@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Software Manager
+Comment=Install new applications
+Keywords=program;software;store;repository;package;add;install;uninstall;remove;apps;applications;games;flatpak;
+GenericName=Install new applications
+Exec=mythicstore
+Icon=software-properties
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=System;
+OnlyShowIn=KDE;
+Name[C]=mythicstore-kde.desktop
