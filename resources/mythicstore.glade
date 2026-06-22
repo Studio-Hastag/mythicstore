@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated with glade 3.40.0 -->
-<interface domain="mintinstall">
+<interface domain="mythicstore">
   <requires lib="gtk+" version="3.22"/>
   <object class="GtkSizeGroup"/>
   <object class="GtkSizeGroup"/>
@@ -147,7 +147,7 @@
   <object class="GtkImage" id="image9">
     <property name="visible">True</property>
     <property name="can-focus">False</property>
-    <property name="icon-name">mintinstall-flatpak-logo-symbolic</property>
+    <property name="icon-name">mythicstore-flatpak-logo-symbolic</property>
     <property name="icon_size">3</property>
   </object>
   <object class="GtkBox" id="package_help_content_box">
@@ -199,7 +199,7 @@
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="icon-name">linuxmint-logo-badge-symbolic</property>
+                <property name="icon-name">mythicos-logo-badge-symbolic</property>
                 <property name="icon_size">3</property>
               </object>
               <packing>
@@ -293,7 +293,7 @@
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="icon-name">mintinstall-package-flatpak-symbolic</property>
+                <property name="icon-name">mythicstore-package-flatpak-symbolic</property>
                 <property name="icon_size">3</property>
               </object>
               <packing>
@@ -969,7 +969,7 @@
                                     <property name="can-focus">False</property>
                                     <property name="valign">center</property>
                                     <property name="pixel-size">12</property>
-                                    <property name="icon-name">mintinstall-unverified</property>
+                                    <property name="icon-name">mythicstore-unverified</property>
                                     <property name="icon_size">1</property>
                                   </object>
                                   <packing>
